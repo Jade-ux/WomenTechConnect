@@ -1,0 +1,20 @@
+on:
+  pull_request:
+    branches:
+    - main
+
+- name: slack-send
+  # You may pin to the exact commit or the version.
+  # uses: slackapi/slack-github-action@007b2c3c751a190b6f0f040e47ed024deaa72844
+  uses: slackapi/slack-github-action@v1.23.0
+  with:
+    # Slack channel ID where message will be posted. Needed if using bot token
+    channel-id: C04U4FQ3NSE
+    # Message to post into Slack. Needed if using bot token
+    slack-message: "Pull request created"
+    # JSON payload to send to Slack if webhook route. If not supplied, json from GitHub event will be sent instead
+    payload: # optional
+    # path to JSON payload to send to Slack if webhook route. If not supplied, json from GitHub event will be sent instead. If payload is provided, it will take preference over this field
+    payload-file-path: # optional
+    # The timestamp of a previous message posted. It will update the existing message instead of posting a new message
+    update-ts: # optional
