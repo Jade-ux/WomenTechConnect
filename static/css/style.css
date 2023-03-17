@@ -1,3 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body{
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+}
+
+
+
+/* Header Styling */
+
+.navbar-brand{
+    font-family: Roboto, sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color:#355c7d;
+}
+
+.navbar{
+    background-color:  #f8b195;
+}
+
+.nav-item{
+    justify-content: space-between;
+    font-size: 20px;
+    margin-left: 6rem;
+    display: flex;
+}
+
+.navbar-nav {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    display: flex;
+}
+
+.navbar-nav .nav-link{
+    color:#355c7d;
+    font-weight: 600;
+}
+
+
+
+/* Footer Styling */
+
+footer {
+    background-color:#f8b195 ;
+    padding: 30px 0;
+    color: #355c7d;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-info h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.company-info p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.contact-info h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Content styling */
+
 .body-container {
     align-items: center;
     justify-content: space-between;
