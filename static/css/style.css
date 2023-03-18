@@ -21,11 +21,17 @@ main > .container {
     font-family: Roboto, sans-serif;
     font-size: 3rem;
     font-weight: 400;
-    color:#355c7d;
+    color:white;
+    text-decoration: none;
+}
+
+.navbar-brand:hover{
+    color: #f8b195;
 }
 
 .navbar{
-    background-color:  #f8b195;
+    background-color:  #355c7d;
+    border-bottom: #f8b195 5px solid;
 }
 
 .nav-item{
@@ -42,8 +48,12 @@ main > .container {
 }
 
 .navbar-nav .nav-link{
-    color:#355c7d;
+    color:white;
     font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover{
+    color: #f8b195;
 }
 
 
@@ -51,9 +61,10 @@ main > .container {
 /* Footer Styling */
 
 footer {
-    background-color:#f8b195 ;
+    background-color:#355c7d ;
     padding: 30px 0;
-    color: #355c7d;
+    color: white;
+    border-top: #f8b195 5px solid;
 }
 
 .footer-container {
