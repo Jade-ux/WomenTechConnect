@@ -136,6 +136,11 @@ footer {
     max-width: 330px;
 }
 
+.form-col {
+    display: flex;
+    justify-content: center;
+}
+
 /* 404 page styling */
 
 .message {
