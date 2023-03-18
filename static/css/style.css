@@ -55,7 +55,19 @@ body{
     color: #f8b195;
 }
 
+/* Nav breakpoints */
 
+@media only screen and (max-width: 769px) {
+    .navbar-brand{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .navbar-brand{
+        font-size: 1.5rem;
+    }
+}
 
 /* Footer Styling */
 
