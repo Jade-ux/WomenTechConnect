@@ -10,8 +10,6 @@ body{
     font-weight: 400;
 }
 
-
-
 /* Header Styling */
 
 .navbar-brand{
@@ -26,9 +24,13 @@ body{
     color: #f8b195;
 }
 
-.navbar{
+.navbar-dark{
     background-color:  #355c7d;
     border-bottom: #f8b195 5px solid;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28248, 177, 149, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .nav-item{
@@ -101,7 +103,7 @@ footer {
 }
 
 /* Content styling */
-
+/*
 .body-container {
     align-items: center;
     justify-content: space-between;
@@ -109,7 +111,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     padding: 0.5rem 1rem;
-}
+}*/
 
 /* Sign Up form */
 
