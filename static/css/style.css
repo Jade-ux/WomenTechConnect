@@ -99,3 +99,133 @@ footer {
     flex-wrap: wrap;
     padding: 0.5rem 1rem;
 }
+
+/* 404 page styling */
+
+.message {
+    width: 50%;
+    height: auto;
+    background-color: #6c5b7b;
+    color: white;
+    position: relative;
+    left: 25%;
+    bottom: 25%;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 10px 10px 20px black;
+    text-shadow: 1px 2px 2px black;
+    z-index: 3;
+}
+
+.message h1 {
+    font-weight: 900;
+}
+
+.message p {
+    font-weight: 600;
+}
+
+.message a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.brackets, .bounce {
+    width: 100px;
+    height: 100px;
+  }
+
+.brackets {
+    font-size: 10rem;
+    position: absolute;
+    font-weight: 900;
+    color: #f67280;
+    z-index: 1
+}
+
+.x {
+    animation: x 13s linear infinite alternate;
+  }
+  
+.y {
+    animation: y 7s linear infinite alternate;
+  }
+  
+  @keyframes x {
+    100% {
+      transform: translateX( calc(60vw - 100px) );
+    }
+  }
+  
+  @keyframes y {
+    100% {
+      transform: translateY( calc(60vh - 100px) );
+    }
+  }
+
+.asterix {
+    font-size: 10rem;
+    position: relative;
+    font-weight: 900;
+    color: #c06c84;
+    margin-left: 500px;
+    z-index: 2
+}
+
+.a {
+    animation: x 7s linear infinite alternate;
+  }
+  
+.b {
+    animation: y 13s linear infinite alternate;
+  }
+  
+  @keyframes a {
+    100% {
+      transform: translateX( calc(10vw - 90px) );
+    }
+  }
+  
+  @keyframes b {
+    100% {
+      transform: translateY( calc(10vw - 90px) );
+    }
+  }
+
+.percentage {
+    font-size: 10rem;
+    position: relative;
+    font-weight: 900;
+    color: #f8b195;
+    left: 800px;
+    bottom: 200px;
+    z-index: -1
+}
+
+.c {
+    animation: x 15s linear infinite alternate;
+  }
+  
+.d {
+    animation: y 5s linear infinite alternate;
+  }
+  
+  @keyframes c {
+    100% {
+      transform: translateX( calc(30vw - 80px) );
+    }
+  }
+  
+  @keyframes d {
+    100% {
+      transform: translateY( calc(40vw - 60px) );
+    }
+  }
