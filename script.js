@@ -1,11 +1,18 @@
-// Hides all of the mentor cards
+/**
+ * Hides all of the mentor cards.
+ */
 function hideAll() {
   $('.card').each(function () {
     this.style.display = "none";
   })
 }
 
-// Checks to see if the selected checkbox value, matches the provided data-attribute on the mentor card.
+/**
+ * Checks to see if the selected checkbox value, matches the provided data-attribute on the mentor card.
+ * @param {string} cardAttribute the attribute taken from the mentor card
+ * @param {string} checkboxValue the value of the current selected checkbox
+ * @returns {boolean} if the cardAttribute and checkboxValue are equal
+ */
 function checkAttributeMatch(cardAttribute, checkboxValue) {
   let match = false;
 
