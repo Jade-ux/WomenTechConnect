@@ -3,7 +3,7 @@
  */
 function hideAll() {
   $('.card').each(function () {
-    this.style.display = "none";
+    this.parentElement.style.display = "none";
   })
 }
 
@@ -33,7 +33,7 @@ function showSelectedMentor() {
   $('.form-check-input:checked').each(function () {
 
     // Finds all of the mentor cards
-    const mentors = $(".cards").children();
+    const mentors = $(".card");
 
     // Iterates through all of the mentor cards
     for (let i = 0; i < mentors.length; i++) {
@@ -43,7 +43,7 @@ function showSelectedMentor() {
       if (checkAttributeMatch(mentor.getAttribute("data-role"), this.value)) {
 
         // Displays the card if the tags match
-        mentor.style.display = "flex";
+        mentor.parentElement.style.display = "block";
       }
     }
   });
