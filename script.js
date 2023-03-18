@@ -23,7 +23,10 @@ function checkAttributeMatch(cardAttribute, checkboxValue) {
   return match;
 }
 
-// If the slected checkbox match the attributes of a mentor, then show that mentor card
+
+/**
+ * If the selected checkbox value matches the attributes of a mentor, then show that mentor card.
+ */
 function showSelectedMentor() {
 
   // Iterate for each checkbox that is active
