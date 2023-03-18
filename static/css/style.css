@@ -136,6 +136,17 @@ footer {
     max-width: 330px;
 }
 
+.form-col {
+    display: flex;
+    justify-content: center;
+}
+
+/* bt primary color */
+.btn-primary {
+    background-color: #355c7d;
+    border-color: #355c7d;
+}
+
 /* 404 page styling */
 
 .message {
