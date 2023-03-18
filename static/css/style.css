@@ -136,6 +136,28 @@ footer {
     max-width: 330px;
 }
 
+/* inspiration page */
+
+.inspiration-row {
+    align-items: center;
+    background-color: #355c7d;
+    margin: 20px 0;
+}
+
+.inspiration-row h2 {
+    color: #f8b195;
+}
+
+.inspiration-row p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.inspiration-img {
+    margin: 10px;
+    border: 5px solid #f8b195;
+}
+
 /* 404 page styling */
 
 .message {
