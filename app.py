@@ -31,8 +31,12 @@ def thankyou():
 def inspiration():
     return render_template("inspiration.html")
 
+@app.route("/404")
+def pagenotfound():
+    return render_template("404.html")
+
 
 if __name__ == "__main__":
-    app.run(host=os.environ.get("IP", "0.0.0.0"),
-            port=int(os.environ.get("PORT", "5000")),
+    app.run(host=os.environ.get("IP"),
+            port=int(os.environ.get("PORT")),
             debug=False)
