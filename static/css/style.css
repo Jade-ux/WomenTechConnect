@@ -265,3 +265,11 @@ footer {
       transform: translateY( calc(40vw - 60px) );
     }
   }
+
+  /* media queries */
+
+  @media screen and (max-width: 400px) {
+    .footer-container {
+        flex-direction: column;
+    }
+  }
