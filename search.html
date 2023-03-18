@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Women Tech Connect</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Women Tech Connect</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-page-list" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mentorship Programme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container body-container">
+        <form>
+            <div>
+                <h5>Role</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="software-developer" name="flexRadioDefault"
+                        id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Software Developer
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                        value="hiring-manager" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Hiring Manager
+                    </label>
+                </div>
+            </div>
+
+            <div><button type="button" class="btn btn-primary search-mentors">Search</button></div>
+        </form>
+
+        <div class="container text-center">
+            <div class="cards row">
+                <div class="card col" style="width: 18rem;" data-exp="5" data-role="software-developer">
+                    <img src="https://c.pxhere.com/photos/86/12/woman_glasses_business_woman_professional_business_suit_person_corporate_office-814735.jpg!d"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sarah</h5>
+                        <p class="card-text">Sarah has worked in the tech industry for 5 years.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fa-solid fa-business-time"></i> 5 Years Experience</li>
+                        <li class="list-group-item"><i class="fa-solid fa-user-tie"></i> Software Developer</li>
+                        <li class="list-group-item"><i class="fa-solid fa-calendar-days"></i> Availble from 12:00 - 6:00
+                            PM (GMT)</li>
+                    </ul>
+                    <div class="card-body">
+                        <button type="button" class="btn btn-success btn-call">Schedule a call</button>
+                    </div>
+                </div>
+                <div class="card col" style="width: 18rem;" data-exp=7 data-role="software-developer">
+                    <img src="https://c.pxhere.com/photos/70/d9/woman_white_headshot_blonde_female_face_portrait_complexion-604504.jpg!d"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Susan</h5>
+                        <p class="card-text">Susan has worked in the tech industry for 7 years.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fa-solid fa-business-time"></i> 7 Years Experience</li>
+                        <li class="list-group-item"><i class="fa-solid fa-user-tie"></i> Software Developer</li>
+                        <li class="list-group-item"><i class="fa-solid fa-calendar-days"></i> Availble from 12:00 - 6:00
+                            PM (GMT)</li>
+                    </ul>
+                    <div class="card-body">
+                        <button type="button" class="btn btn-success btn-call">Schedule a call</button>
+                    </div>
+                </div>
+                <div class="card col" style="width: 18rem;" data-exp=12 data-role="hiring-manager">
+                    <img src="https://c.pxhere.com/photos/a1/67/mentor_business_woman_confident_happy_confident_woman_professional_smiling-557163.jpg!d"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Margaret</h5>
+                        <p class="card-text">Sarah has worked in the tech industry for 12 years.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fa-solid fa-business-time"></i> 12 Years Experience</li>
+                        <li class="list-group-item"><i class="fa-solid fa-user-tie"></i> Hiring Manager</li>
+                        <li class="list-group-item"><i class="fa-solid fa-calendar-days"></i> Availble from 12:00 - 6:00
+                            PM (GMT)</li>
+                    </ul>
+                    <div class="card-body">
+                        <button type="button" class="btn btn-success btn-call">Schedule a call</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="py-3 fixed-bottom">
+        <div class="footer-container">
+            <div class="company-info">
+                <h3>Women in Tech</h3>
+                <p>A company dedicated to empowering women in technology.</p>
+            </div>
+            <div class="contact-info">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>Email: info@womenintech.com</li>
+                    <li>Phone: +1 (555) 555-5555</li>
+                    <li>Address: 123 Main St, Anytown USA</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/c64e77b395.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
