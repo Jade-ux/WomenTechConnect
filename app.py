@@ -27,9 +27,11 @@ def signup():
 def thankyou():
     return render_template("thankyou.html")
 
+
 @app.route("/inspiration")
 def inspiration():
     return render_template("inspiration.html")
+
 
 @app.route("/404")
 def pagenotfound():
