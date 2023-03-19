@@ -376,6 +376,21 @@ footer {
 
 }
 
+/* Login page */
+.card-header{
+  font-size: 2rem;
+  justify-content: center;
+  display: flex;
+  background-color: #355c7d;
+  color: white;
+}
+
+.signin-form button{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
 /* media queries */
 
 @media screen and (max-width: 576px) {
