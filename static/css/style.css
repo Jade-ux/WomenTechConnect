@@ -170,6 +170,17 @@ footer {
     border: 5px solid #f8b195;
 }
 
+/* home page */
+
+.events-row {
+  border: #6c5B7B solid 3px;
+  border-radius: 3px;
+}
+
+.events-row p {
+  color: rgb(32, 32, 32);
+}
+
 /* 404 page styling */
 
 .message {
