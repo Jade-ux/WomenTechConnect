@@ -357,7 +357,7 @@ footer {
 /* media queries */
 
 @media screen and (max-width: 400px) {
-  .footer-container {
+  .footer-container, .search-container {
     flex-direction: column;
   }
 }
@@ -365,12 +365,18 @@ footer {
 /* search mentorship program */
 
 .search-container {
-  border-bottom: #355c7d 1px solid;
   padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
 }
 
 .search-mentors {
   margin-top: 10px;
+}
+
+.search-filter {
+
 }
 
 .cards-container {

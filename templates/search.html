@@ -6,26 +6,86 @@
             <h3>Find your mentor</h3>
         </div>
 
-        <div class="search-container">
-            <form>
-                <h4>Are you looking for a ...</h4>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" value="software-developer" name="flexRadioDefault"
-                        id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Software Developer
-                    </label>
+        <form>
+            <h4>Are you looking for a ...</h4>
+            <div class="search-container">
+                <div class="search-filter">
+                    <h5>Role</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="role" id="role-chief-people-officer" value="chief-people-officer">
+                        <label class="form-check-label" for="role-chief-people-officer">
+                            Chief People Officer
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="role" id="role-chief-technical-officer" value="chief-technical-officer">
+                        <label class="form-check-label" for="role-chief-technical-officer">
+                            Chief Technical Officer
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="role" id="role-head-of-product" value="head-of-product">
+                        <label class="form-check-label" for="role-head-of-product">
+                            Head of Product
+                        </label>
+                    </div>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                        value="hiring-manager" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
-                        Hiring Manager
-                    </label>
+                <div class="search-filter">
+                    <h5>Location</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="location" id="location-dublin" value="dublin">
+                        <label class="form-check-label" for="location-dublin">
+                            Dublin
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="location" id="location-london" value="london">
+                        <label class="form-check-label" for="location-london">
+                            London
+                        </label>
+                    </div>
                 </div>
-                <button type="button" class="btn btn-primary search-mentors">Search</button>
-            </form>
-        </div>
+                <div class="search-filter">
+                    <h5>Skills</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="skills" id="skills-hiring-manager" value="hiring-manager">
+                        <label class="form-check-label" for="skills-hiring-manager">
+                            Hiring Manager
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="skills" id="skills-software-architect" value="software-architect">
+                        <label class="form-check-label" for="skills-software-architect">
+                            Software Architect
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="skills" id="skills-lead-developer" value="lead-developer">
+                        <label class="form-check-label" for="skills-lead-developer">
+                            Lead Developer
+                        </label>
+                    </div>
+                </div>
+                <div class="search-filter">
+                    <h5>Career Progression</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="career-progression" id="career-progression-software-development" value="software-development">
+                        <label class="form-check-label" for="career-progression-software-development">
+                            Software Development
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="career-progression" id="career-progression-public-speaking" value="public-speaking">
+                        <label class="form-check-label" for="career-progression-public-speaking">
+                            Public Speaking
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-lg search-mentors">Search</button>
+        </form>
+        
+        <hr>
 
         <div class="container text-center cards-container">
             <div class="cards row">
