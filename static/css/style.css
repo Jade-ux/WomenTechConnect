@@ -133,6 +133,66 @@ footer {
     padding: 0.5rem 1rem;
 }*/
 
+
+/* Event Styling */
+
+.events {
+    background-color: yellow;
+}
+
+.featured-title,
+.events {
+    padding: 20px;
+    text-align: center;
+
+}
+
+.events-list {
+    padding: 20px;
+    
+}
+.events-by-date {
+    
+    padding: 20px;
+}
+
+.events-list {
+    margin-bottom: 10px;
+    display: block;
+    clear: both;    
+}
+
+.image-events {
+    margin-bottom: 0px;
+    padding-bottom: 60px;
+}
+
+.events-list .four-events p,
+.events-list .image-events p {
+    margin: 0;
+}
+
+
+.events-date {
+    color: #c06c84;
+    font-weight: bolder;
+    
+}
+
+.featured-envents {
+    padding: 20px;
+    font-size: 30px;
+    
+}
+
+.events-list-featured {
+    margin-bottom: 10px;
+    display: block;
+    clear: both;
+    text-align: center;
+
+}
+
 .body-container {
   flex-grow: 1;
   padding-top: 20px;
@@ -344,3 +404,4 @@ footer {
   justify-content: center;
   padding-top: 10px;
 }
+
