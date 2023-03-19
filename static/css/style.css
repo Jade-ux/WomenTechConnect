@@ -378,7 +378,7 @@ footer {
 
 /* media queries */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   .footer-container, .search-container {
     flex-direction: column;
   }
