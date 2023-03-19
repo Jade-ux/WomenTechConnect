@@ -136,15 +136,10 @@ footer {
 
 /* Event Styling */
 
-.events {
-    background-color: yellow;
-}
 
-.featured-title,
-.events {
+.featured-title{
     padding: 20px;
     text-align: center;
-
 }
 
 .events-list {
@@ -214,6 +209,7 @@ footer {
 .btn-primary {
   background-color: #355c7d;
   border-color: #355c7d;
+  color: white;
 }
 
 .btn-success {
@@ -226,6 +222,7 @@ footer {
 .btn-primary:hover, .btn-primary:focus, .btn-success:hover, .btn-success:focus{
   background-color: #C06C84;
   border-color: #C06C84;
+  color: white;
 }
 
 .btn-fixed-width {
@@ -265,6 +262,16 @@ footer {
 
 .events-row p {
   color: rgb(32, 32, 32);
+}
+
+.events-col a {
+  color: #C06C84;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.events-col a:hover {
+  color: #6c5B7B;
 }
 
 .carousel-container {

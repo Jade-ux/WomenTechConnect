@@ -19,10 +19,32 @@
       </div>
     </div>
     <div class="row mb-3 px-3 py-3 events-row">
-      <div class="col mr-auto">
-        <h2 class="mb-2">Events coming up</h2>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explic</p>
+      <div class="col mr-auto events-col">
+        <h2 class="mb-3">Events coming up</h2>
+        <h5 class="mb-2"><a href="https://www.eventbrite.com/e/women-in-tech-virtual-workshop-negotiation-how-to-get-what-you-want-tickets-560978631187?aff=ebdssbonlinesearch" target="_blank">
+          Women in Tech Virtual Workshop - Negotiation: How to Get What You Want
+        </a></h5> 
+        <p><strong>Wed, Mar 22, 2023 @ 4:00 PM GMT</strong><p>
+          <p>Knoxville Technology Council</p>
+      </div>
+      <hr>
+      <div class="col mr-auto events-col">
+        <h5 class="mb-2"><a href="https://www.eventbrite.co.uk/e/iwd-rise-fintech-mentoring-tickets-521939263387?aff=ebdssbonlinesearch" target="_blank">
+          IWD Rise FinTech Mentoring
+        </a></h5> 
+        <p><strong>Fri, Mar 31, 2023 @ 9:00 AM BST</strong><p>
+          <p>Rise London</p>
+      </div>
+      <hr>
+      <div class="col mr-auto events-col">
+        <h5 class="mb-2"><a href="https://www.eventbrite.com/e/2023-womens-entrepreneurship-symposium-part-three-technology-and-funding-tickets-537684257087?aff=ebdssbonlinesearch" target="_blank">
+          2023 Women’s Entrepreneurship Symposium, part three: Technology and funding
+        </a></h5> 
+        <p><strong>Wed, Mar 29, 2023 @ 7:00 PM BST</strong><p>
+          <p>The U.S. Patent and Trademark Office</p>
+      </div>
+      <div class="py-3">
+        <a class="btn btn-primary btn-fixed-width" role="button" href="{{ url_for('events') }}">View all events</a>
       </div>
     </div>
   </div>
@@ -45,8 +67,7 @@
               <a class="btn btn-primary btn-fixed-width" role="button" href="{{ url_for('signup') }}">Sign up</a>
             </div>
             <div class="col col-md-4 py-3">
-              <a class="btn btn-primary btn-fixed-width" role="button" href="{{ url_for('inspiration') }}">Calendar of
-                Events</a>
+              <a class="btn btn-primary btn-fixed-width" role="button" href="{{ url_for('inspiration') }}">Be inspired</a>
             </div>
           </div>
         </section>

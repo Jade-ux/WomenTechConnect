@@ -32,6 +32,10 @@ def thankyou():
 def inspiration():
     return render_template("inspiration.html")
 
+@app.route("/events")
+def events():
+    return render_template("events.html")
+
 
 @app.route("/404")
 def pagenotfound():
