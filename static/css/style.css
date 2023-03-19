@@ -209,6 +209,7 @@ footer {
 .btn-primary {
   background-color: #355c7d;
   border-color: #355c7d;
+  color: white;
 }
 
 .btn-success {
@@ -221,6 +222,7 @@ footer {
 .btn-primary:hover, .btn-primary:focus, .btn-success:hover, .btn-success:focus{
   background-color: #C06C84;
   border-color: #C06C84;
+  color: white;
 }
 
 .btn-fixed-width {
@@ -262,13 +264,13 @@ footer {
   color: rgb(32, 32, 32);
 }
 
-.events-row a {
+.events-col a {
   color: #C06C84;
   text-decoration: none;
   font-weight: 400;
 }
 
-.events-row a:hover {
+.events-col a:hover {
   color: #6c5B7B;
 }
 
