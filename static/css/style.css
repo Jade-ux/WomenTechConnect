@@ -6,17 +6,20 @@
   border: none;
 }
 
-body {
-  font-family: Lato, sans-serif;
-  font-weight: 400;
-}
-
 h1 {
   margin-top: 1rem;
 }
 
 main>.container {
   padding: 60px 15px 0;
+}
+
+body{
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Header Styling */
@@ -133,6 +136,11 @@ footer {
     flex-wrap: wrap;
     padding: 0.5rem 1rem;
 }*/
+
+.body-container {
+  flex-grow: 1;
+  padding-top: 20px;
+}
 
 /* Sign Up form */
 
