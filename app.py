@@ -43,6 +43,11 @@ def signin():
     return render_template("signin.html")
 
 
+@app.route("/team")
+def team():
+    return render_template("team.html")
+
+
 @app.route("/logout")
 def logout():
     return render_template("logout.html")
