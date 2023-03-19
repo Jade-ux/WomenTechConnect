@@ -5,17 +5,72 @@
             <div>
                 <h5>Role</h5>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" value="software-developer" name="flexRadioDefault"
-                        id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Software Developer
+                    <input class="form-check-input" type="radio" name="role" id="role-chief-people-officer" value="chief-people-officer">
+                    <label class="form-check-label" for="role-chief-people-officer">
+                        Chief People Officer
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                        value="hiring-manager" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
+                    <input class="form-check-input" type="radio" name="role" id="role-chief-technical-officer" value="chief-technical-officer">
+                    <label class="form-check-label" for="role-chief-technical-officer">
+                        Chief Technical Officer
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="role" id="role-head-of-product" value="head-of-product">
+                    <label class="form-check-label" for="role-head-of-product">
+                        Head of Product
+                    </label>
+                </div>
+            </div>
+            <div>
+                <h5>Location</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="location" id="location-dublin" value="dublin">
+                    <label class="form-check-label" for="location-dublin">
+                        Dublin
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="location" id="location-london" value="london">
+                    <label class="form-check-label" for="location-london">
+                        London
+                    </label>
+                </div>
+            </div>
+            <div>
+                <h5>Skills</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="skills" id="skills-hiring-manager" value="hiring-manager">
+                    <label class="form-check-label" for="skills-hiring-manager">
                         Hiring Manager
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="skills" id="skills-software-architect" value="software-architect">
+                    <label class="form-check-label" for="skills-software-architect">
+                        Software Architect
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="skills" id="skills-lead-developer" value="lead-developer">
+                    <label class="form-check-label" for="skills-lead-developer">
+                        Lead Developer
+                    </label>
+                </div>
+            </div>
+            <div>
+                <h5>Career Progression</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="career-progression" id="career-progression-software-development" value="software-development">
+                    <label class="form-check-label" for="career-progression-software-development">
+                        Software Development
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="career-progression" id="career-progression-public-speaking" value="public-speaking">
+                    <label class="form-check-label" for="career-progression-public-speaking">
+                        Public Speaking
                     </label>
                 </div>
             </div>
@@ -26,19 +81,17 @@
         <div class="container text-center">
             <div class="cards row">
                 <div class="col-sm-4 mx-auto">
-                    <div class="card col" style="width: 18rem;" data-exp="5" data-role="software-developer">
+                    <div class="card col" style="width: 18rem;" data-role="chief-people-officer" data-location="dublin" data-skills="hiring-manager" data-progress="software-development">
                         <img src="static/images/profile-1.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Sarah</h5>
-                            <p class="card-text">Sarah has worked in the tech industry for 5 years.</p>
+                            <h5 class="card-title">Fiona</h5>
+                            <p class="card-text">Fiona has been working in tech recruitment for 8 years.</p>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><i class="fa-solid fa-business-time"></i> 5 Years Experience
-                            </li>
-                            <li class="list-group-item"><i class="fa-solid fa-user-tie"></i> Software Developer</li>
-                            <li class="list-group-item"><i class="fa-solid fa-calendar-days"></i> Availble from 12:00 -
-                                6:00
-                                PM (GMT)</li>
+                        <ul class="list-group list-group-flush text-start">
+                            <li class="list-group-item"><i class="fa-solid fa-user-tie"></i>  <span class="fw-bolder text-decoration-underline">Role</span> - Chief People Officer</li>
+                            <li class="list-group-item"><i class="fa-solid fa-location-dot"></i>  <span class="fw-bolder text-decoration-underline">Location</span> - Dublin</li>
+                            <li class="list-group-item"><i class="fa-solid fa-thumbtack"></i>  <span class="fw-bolder text-decoration-underline">Skills</span> - Hiring Manager</li>
+                            <li class="list-group-item"><i class="fa-solid fa-up-long"></i>  <span class="fw-bolder text-decoration-underline">Career Progression</span> - Software Development</li>
                         </ul>
                         <div class="card-body">
                             <button type="button" class="btn btn-success btn-call">Schedule a call</button>
@@ -46,19 +99,17 @@
                     </div>
                 </div>
                 <div class="col-sm-4 mx-auto">
-                    <div class="card col" style="width: 18rem;" data-exp=7 data-role="software-developer">
+                    <div class="card col" style="width: 18rem;" data-role="chief-technical-officer" data-location="london" data-skills="software-architect" data-progress="software-development">
                         <img src="static/images/profile-2.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Susan</h5>
-                            <p class="card-text">Susan has worked in the tech industry for 7 years.</p>
+                            <h5 class="card-title">Rachel</h5>
+                            <p class="card-text">Rachel has 10 years experience working as a CTO.</p>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><i class="fa-solid fa-business-time"></i> 7 Years Experience
-                            </li>
-                            <li class="list-group-item"><i class="fa-solid fa-user-tie"></i> Software Developer</li>
-                            <li class="list-group-item"><i class="fa-solid fa-calendar-days"></i> Availble from 12:00 -
-                                6:00
-                                PM (GMT)</li>
+                        <ul class="list-group list-group-flush text-start">
+                            <li class="list-group-item"><i class="fa-solid fa-user-tie"></i>  <span class="fw-bolder text-decoration-underline">Role</span> - Chief Technical Officer</li>
+                            <li class="list-group-item"><i class="fa-solid fa-location-dot"></i>  <span class="fw-bolder text-decoration-underline">Location</span> - London</li>
+                            <li class="list-group-item"><i class="fa-solid fa-thumbtack"></i>  <span class="fw-bolder text-decoration-underline">Skills</span> - Software Architect</li>
+                            <li class="list-group-item"><i class="fa-solid fa-up-long"></i>  <span class="fw-bolder text-decoration-underline">Career Progression</span> - Software Development</li>
                         </ul>
                         <div class="card-body">
                             <button type="button" class="btn btn-success btn-call">Schedule a call</button>
@@ -66,19 +117,17 @@
                     </div>
                 </div>
                 <div class="col-sm-4 mx-auto">
-                    <div class="card col" style="width: 18rem;" data-exp=12 data-role="hiring-manager">
+                    <div class="card col" style="width: 18rem;" data-role="head-of-product" data-location="dublin" data-skills="lead-developer" data-progress="public-speaking">
                         <img src="static/images/profile-3.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Margaret</h5>
-                            <p class="card-text">Sarah has worked in the tech industry for 12 years.</p>
+                            <h5 class="card-title">Sam</h5>
+                            <p class="card-text">Sam has 20 years experience working in the tech industry</p>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><i class="fa-solid fa-business-time"></i> 12 Years Experience
-                            </li>
-                            <li class="list-group-item"><i class="fa-solid fa-user-tie"></i> Hiring Manager</li>
-                            <li class="list-group-item"><i class="fa-solid fa-calendar-days"></i> Availble from 12:00 -
-                                6:00
-                                PM (GMT)</li>
+                        <ul class="list-group list-group-flush text-start">
+                            <li class="list-group-item"><i class="fa-solid fa-user-tie"></i>  <span class="fw-bolder text-decoration-underline">Role</span> - Head of Product</li>
+                            <li class="list-group-item"><i class="fa-solid fa-location-dot"></i>  <span class="fw-bolder text-decoration-underline">Location</span> - Dublin</li>
+                            <li class="list-group-item"><i class="fa-solid fa-thumbtack"></i>  <span class="fw-bolder text-decoration-underline">Skills</span> - Lead Developer</li>
+                            <li class="list-group-item"><i class="fa-solid fa-up-long"></i>  <span class="fw-bolder text-decoration-underline">Career Progression</span> - Public Speaking</li>
                         </ul>
                         <div class="card-body">
                             <button type="button" class="btn btn-success btn-call">Schedule a call</button>
