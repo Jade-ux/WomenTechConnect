@@ -227,11 +227,13 @@ footer {
 
 .message {
   width: 50%;
+  min-width: 300px;
+  margin: auto auto;
   height: auto;
-  background-color: #6c5b7b;
+  background-color: #355c7d;
+  border: 5px solid #f8b195;
   color: white;
   position: relative;
-  left: 25%;
   bottom: 25%;
   font-size: 1.2rem;
   border-radius: 20px;
@@ -261,10 +263,10 @@ footer {
   font-size: 1.5rem;
 }
 
-.brackets,
-.bounce {
-  width: 100px;
-  height: 100px;
+.brackets {
+  max-width:10px;
+  height: 10px;
+
 }
 
 .brackets {
@@ -276,7 +278,7 @@ footer {
 }
 
 .x {
-  animation: x 13s linear infinite alternate;
+  animation: x 7s linear infinite alternate;
 }
 
 .y {
@@ -300,27 +302,26 @@ footer {
   position: relative;
   font-weight: 900;
   color: #c06c84;
-  margin-left: 500px;
   z-index: 2
 }
 
 .a {
-  animation: x 7s linear infinite alternate;
+  animation: a 10s linear infinite alternate;
 }
 
 .b {
-  animation: y 13s linear infinite alternate;
+  animation: b 7s linear infinite alternate;
 }
 
 @keyframes a {
   100% {
-    transform: translateX(calc(10vw - 90px));
+    transform: translateX(calc(60vw - 100px));
   }
 }
 
 @keyframes b {
   100% {
-    transform: translateY(calc(10vw - 90px));
+    transform: translateX(calc(60vw - 100px));
   }
 }
 
@@ -329,29 +330,50 @@ footer {
   position: relative;
   font-weight: 900;
   color: #f8b195;
-  left: 800px;
-  bottom: 200px;
   z-index: -1
 }
 
 .c {
-  animation: x 15s linear infinite alternate;
+  animation: c 15s linear infinite alternate;
 }
 
 .d {
-  animation: y 5s linear infinite alternate;
+  animation: d 5s linear infinite alternate;
 }
 
 @keyframes c {
   100% {
-    transform: translateX(calc(30vw - 80px));
+    transform: translateX(calc(60vw - 100px));
   }
 }
 
 @keyframes d {
   100% {
-    transform: translateY(calc(40vw - 60px));
+    transform: translateY(calc(50px));
   }
+}
+
+.thanks {
+  width: 50%;
+  min-width: 300px;
+  margin: auto auto;
+  height: auto;
+  background-color: #355c7d;
+  border: 5px solid #f8b195;
+  color: white;
+  position: relative;
+  bottom: 25%;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 10px 10px 20px black;
+  text-shadow: 1px 2px 2px black;
+
 }
 
 /* media queries */
