@@ -42,13 +42,13 @@
     </div>
     <div class="row">
       <div class="col col-md-4 py-3">
-        <button class="btn btn-primary btn-fixed-width">Meet our mentors</button>
+        <a class="btn btn-primary btn-fixed-width" role="button" href="{{ url_for('search') }}">Meet our mentors</a>
       </div>
       <div class="col col-md-4 py-3">
-        <button class="btn btn-primary btn-fixed-width">Sign up</button>
+        <a class="btn btn-primary btn-fixed-width" role="button" href="{{ url_for('signup') }}">Sign up</a>
       </div>
       <div class="col col-md-4 py-3">
-        <button class="btn btn-primary btn-fixed-width">Calendar of Events</button>
+        <a class="btn btn-primary btn-fixed-width" role="button" href="{{ url_for('inspiration') }}">Calendar of Events</a>
       </div>
     </div>
   </div>

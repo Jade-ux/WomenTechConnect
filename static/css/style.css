@@ -156,6 +156,11 @@ footer {
   border-color: #C06C84;
 }
 
+.btn-primary:focus {
+  background-color: #C06C84;
+  border-color: #C06C84;
+}
+
 .btn-fixed-width {
   width: 100%;
   height: 100%;
