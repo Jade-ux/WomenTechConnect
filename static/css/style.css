@@ -413,3 +413,9 @@ footer {
 .cards-container .card-title {
   letter-spacing: 2px;
 }
+
+.cards .col {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
