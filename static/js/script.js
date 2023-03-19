@@ -14,6 +14,7 @@ function hideAll() {
  * @returns {boolean} if the cardAttribute and checkboxValue are equal
  */
 function checkAttributeMatch(cardAttribute, checkboxValue) {
+  console.log(cardAttribute)
   let match = false;
 
   if (checkboxValue == cardAttribute) {
@@ -38,9 +39,10 @@ function showSelectedMentor() {
     // Iterates through all of the mentor cards
     for (let i = 0; i < mentors.length; i++) {
       let mentor = mentors[i];
-
+      
+      console.log(`data-{$this.name}`)
       // Check if the mentor card attribute matches the current checkbox value
-      if (checkAttributeMatch(mentor.getAttribute("data-role"), this.value)) {
+      if (checkAttributeMatch(mentor.getAttribute(`data-${this.name}`), this.value)) {
 
         // Displays the card if the tags match
         mentor.parentElement.style.display = "block";
