@@ -492,6 +492,22 @@ footer {
 .cards .col {
   display: flex;
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 30px;
+}
+
+/* team page */
+
+.social-links {
+  color: #f8b195;
+  padding: 0 10px;
+}
+
+.social-links:hover {
+  color: #C06C84
+}
+
+.img-team {
+  width: 285px;
+  height: 285px;
 }
 
