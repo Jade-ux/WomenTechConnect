@@ -453,7 +453,7 @@ footer {
 
 /* media queries */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   .footer-container, .search-container {
     flex-direction: column;
   }
@@ -472,10 +472,6 @@ footer {
   margin-top: 10px;
 }
 
-.search-filter {
-
-}
-
 .cards-container {
   margin: 20px 0;
 }
@@ -491,5 +487,11 @@ footer {
 
 .cards-container .card-title {
   letter-spacing: 2px;
+}
+
+.cards .col {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
 }
 
