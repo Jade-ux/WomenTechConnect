@@ -22,7 +22,7 @@
       <div class="col mr-auto">
         <h2 class="mb-2">Events coming up</h2>
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explic</p>
+          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explic</p>
       </div>
     </div>
   </div>
@@ -38,19 +38,114 @@
         quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
         nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
         quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+        <section>
+          <div class="row mt-2">
+            <div class="col col-md-4 py-3">
+              <a class="btn btn-primary btn-fixed-width" role="button" href="{{ url_for('search') }}">Meet our
+                mentors</a>
+            </div>
+            <div class="col col-md-4 py-3">
+              <a class="btn btn-primary btn-fixed-width" role="button" href="{{ url_for('signup') }}">Sign up</a>
+            </div>
+            <div class="col col-md-4 py-3">
+              <a class="btn btn-primary btn-fixed-width" role="button" href="{{ url_for('inspiration') }}">Calendar of
+                Events</a>
+            </div>
+          </div>
+        </section>
+        <section class="pt-3 pb-5">
+          <div class="container carousel-container">
+            <div class="row">
+              <div class="col-6">
+                <h3 class="mb-3">Meet our mentors</h3>
+              </div>
+              <div class="col-12">
+                <div id="carouselControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                              <img class="card-img" alt="" src="static/images/profile-1.jpeg">
+                            <div class="card-body">
+                              <h4 class="card-title">Sarah</h4>
+                              <p class="card-text">Expertise: Python</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                              <img class="card-img" alt="" src="static/images/profile-2.jpeg">
+                            <div class="card-body">
+                              <h4 class="card-title">Susan</h4>
+                              <p class="card-text">Expertise: Full-stack</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                            <img class="card-img" alt="" src="static/images/profile-3.jpeg">
+                          <div class="card-body">
+                            <h4 class="card-title">Margaret</h4>
+                            <p class="card-text">Expertise: React</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img class="card-img" alt="" src="static/images/profile-1.jpeg">
+                          <div class="card-body">
+                            <h4 class="card-title">Sarah</h4>
+                            <p class="card-text">Expertise: Python</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img class="card-img" alt="" src="static/images/profile-2.jpeg">
+                          <div class="card-body">
+                            <h4 class="card-title">Susan</h4>
+                            <p class="card-text">Expertise: Full-stack</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img class="card-img" alt="" src="static/images/profile-3.jpeg">
+                        <div class="card-body">
+                          <h4 class="card-title">Margaret</h4>
+                          <p class="card-text">Expertise: React</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 text-center">
+              <a class="btn btn-primary mb-3 mr-1" href="#carouselControls" role="button" data-slide="prev">
+                <i class="fa fa-arrow-left"></i>
+              </a>
+              <a class="btn btn-primary mb-3 " href="#carouselControls" role="button" data-slide="next">
+                <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col col-md-4 py-3">
-        <a class="btn btn-primary btn-fixed-width" role="button" href="{{ url_for('search') }}">Meet our mentors</a>
-      </div>
-      <div class="col col-md-4 py-3">
-        <a class="btn btn-primary btn-fixed-width" role="button" href="{{ url_for('signup') }}">Sign up</a>
-      </div>
-      <div class="col col-md-4 py-3">
-        <a class="btn btn-primary btn-fixed-width" role="button" href="{{ url_for('inspiration') }}">Calendar of Events</a>
-      </div>
+      </section>
     </div>
   </div>
 </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 {% endblock %}
