@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row p-3">
+  <div class="col-12 text-center">
+    <h1>Welcome to WomenTechConnect</h1>
+    <p>Helping women help each other</p>
+  </div>
+</div>
+<div class="row p-3">
+  <div class="col-12 col-md-4">
+    <div class="row mb-5">
+      <div class="col">
+        <h2 class="mb-2">About us</h2>
+        Sign up to WomenTechConnect to connect with our growing network of tech mentors and to keep up to date with
+        industry news, new technologies, tech events and to connect with your peers.
+
+        A place for women in tech to come together to meet like-minded people and to help develop our skills and harness
+        the power of the network.
+      </div>
+    </div>
+    <div class="row mb-3 px-3 py-3 events-row">
+      <div class="col mr-auto">
+        <h2 class="mb-2">Events coming up</h2>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explic</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-8 px-5">
+    <div class="row mb-5">
+      <div class="col">
+        <h2 class="mb-2">How it works</h2>
+        The goal of our mentorship program is to accelerate the personal and professional development of our mentees for the benefit of all. We are growing a network of women in the technology industry which matches experienced leaders with individuals entering the community.
+        You can search through our extensive list of mentors who are looking to work with women and share their experiences to ensure their mentees meet their potential.
+        Filter through the categories to find the right mentor for you and schedule a call. By sharing our experiences we can help our peers to accelerate their career growth and help them to navigate the rapidly growing industry. 
+        In our experience mentoring increases career progression, promotion rates, and employee satisfaction for both the mentors and mentees.
+        Mentors get the opportunity to develop their leadership and communication skills and gain new perspectives along with the knowledge that they are building the next generation of female developers.
+        <section>
+          <div class="row mt-2">
+            <div class="col col-md-4 py-3">
+              <a class="btn btn-primary btn-fixed-width" role="button" href="{{ url_for('search') }}">Meet our
+                mentors</a>
+            </div>
+            <div class="col col-md-4 py-3">
+              <a class="btn btn-primary btn-fixed-width" role="button" href="{{ url_for('signup') }}">Sign up</a>
+            </div>
+            <div class="col col-md-4 py-3">
+              <a class="btn btn-primary btn-fixed-width" role="button" href="{{ url_for('inspiration') }}">Calendar of
+                Events</a>
+            </div>
+          </div>
+        </section>
+        <section class="pt-3 pb-5">
+          <div class="container carousel-container">
+            <div class="row">
+              <div class="col-6">
+                <h3 class="mb-3">Meet our mentors</h3>
+              </div>
+              <div class="col-12">
+                <div id="carouselControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                              <img class="card-img" alt="" src="static/images/profile-1.jpeg">
+                            <div class="card-body">
+                              <h4 class="card-title">Sarah</h4>
+                              <p class="card-text">Expertise: Python</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                              <img class="card-img" alt="" src="static/images/profile-2.jpeg">
+                            <div class="card-body">
+                              <h4 class="card-title">Susan</h4>
+                              <p class="card-text">Expertise: Full-stack</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                            <img class="card-img" alt="" src="static/images/profile-3.jpeg">
+                          <div class="card-body">
+                            <h4 class="card-title">Margaret</h4>
+                            <p class="card-text">Expertise: React</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img class="card-img" alt="" src="static/images/profile-1.jpeg">
+                          <div class="card-body">
+                            <h4 class="card-title">Sarah</h4>
+                            <p class="card-text">Expertise: Python</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img class="card-img" alt="" src="static/images/profile-2.jpeg">
+                          <div class="card-body">
+                            <h4 class="card-title">Susan</h4>
+                            <p class="card-text">Expertise: Full-stack</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img class="card-img" alt="" src="static/images/profile-3.jpeg">
+                        <div class="card-body">
+                          <h4 class="card-title">Margaret</h4>
+                          <p class="card-text">Expertise: React</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 text-center">
+              <a class="btn btn-primary mb-3 mr-1" href="#carouselControls" role="button" data-slide="prev">
+                <i class="fa fa-arrow-left"></i>
+              </a>
+              <a class="btn btn-primary mb-3 " href="#carouselControls" role="button" data-slide="next">
+                <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+      </div>
+      </section>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+{% endblock %}
