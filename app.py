@@ -1,5 +1,5 @@
 import os
-
+from flask_login import (LoginManager, current_user, login_required)
 from flask import (Flask, render_template)
 if os.path.exists("env.py"):
     import env
@@ -38,7 +38,20 @@ def pagenotfound():
     return render_template("404.html")
 
 
+@app.route("/signin")
+def signin():
+    return render_template("signin.html")
+
+
+@app.route("/logout")
+def logout():
+    return render_template("logout.html")
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=False)
+
+
+
