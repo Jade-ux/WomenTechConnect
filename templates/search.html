@@ -1,84 +1,93 @@
 {% extends "base.html" %}
 {% block content %}
 
+        <div class="text-center">
+            <h1>Mentorship Program</h1>
+            <h3>Find your mentor</h3>
+        </div>
+
         <form>
-            <div>
-                <h5>Role</h5>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="role" id="role-chief-people-officer" value="chief-people-officer">
-                    <label class="form-check-label" for="role-chief-people-officer">
-                        Chief People Officer
-                    </label>
+            <h4>Are you looking for a ...</h4>
+            <div class="search-container">
+                <div class="search-filter">
+                    <h5>Role</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="role" id="role-chief-people-officer" value="chief-people-officer">
+                        <label class="form-check-label" for="role-chief-people-officer">
+                            Chief People Officer
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="role" id="role-chief-technical-officer" value="chief-technical-officer">
+                        <label class="form-check-label" for="role-chief-technical-officer">
+                            Chief Technical Officer
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="role" id="role-head-of-product" value="head-of-product">
+                        <label class="form-check-label" for="role-head-of-product">
+                            Head of Product
+                        </label>
+                    </div>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="role" id="role-chief-technical-officer" value="chief-technical-officer">
-                    <label class="form-check-label" for="role-chief-technical-officer">
-                        Chief Technical Officer
-                    </label>
+                <div class="search-filter">
+                    <h5>Location</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="location" id="location-dublin" value="dublin">
+                        <label class="form-check-label" for="location-dublin">
+                            Dublin
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="location" id="location-london" value="london">
+                        <label class="form-check-label" for="location-london">
+                            London
+                        </label>
+                    </div>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="role" id="role-head-of-product" value="head-of-product">
-                    <label class="form-check-label" for="role-head-of-product">
-                        Head of Product
-                    </label>
+                <div class="search-filter">
+                    <h5>Skills</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="skills" id="skills-hiring-manager" value="hiring-manager">
+                        <label class="form-check-label" for="skills-hiring-manager">
+                            Hiring Manager
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="skills" id="skills-software-architect" value="software-architect">
+                        <label class="form-check-label" for="skills-software-architect">
+                            Software Architect
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="skills" id="skills-lead-developer" value="lead-developer">
+                        <label class="form-check-label" for="skills-lead-developer">
+                            Lead Developer
+                        </label>
+                    </div>
+                </div>
+                <div class="search-filter">
+                    <h5>Career Progression</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="career-progression" id="career-progression-software-development" value="software-development">
+                        <label class="form-check-label" for="career-progression-software-development">
+                            Software Development
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="career-progression" id="career-progression-public-speaking" value="public-speaking">
+                        <label class="form-check-label" for="career-progression-public-speaking">
+                            Public Speaking
+                        </label>
+                    </div>
                 </div>
             </div>
-            <div>
-                <h5>Location</h5>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="location" id="location-dublin" value="dublin">
-                    <label class="form-check-label" for="location-dublin">
-                        Dublin
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="location" id="location-london" value="london">
-                    <label class="form-check-label" for="location-london">
-                        London
-                    </label>
-                </div>
-            </div>
-            <div>
-                <h5>Skills</h5>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="skills" id="skills-hiring-manager" value="hiring-manager">
-                    <label class="form-check-label" for="skills-hiring-manager">
-                        Hiring Manager
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="skills" id="skills-software-architect" value="software-architect">
-                    <label class="form-check-label" for="skills-software-architect">
-                        Software Architect
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="skills" id="skills-lead-developer" value="lead-developer">
-                    <label class="form-check-label" for="skills-lead-developer">
-                        Lead Developer
-                    </label>
-                </div>
-            </div>
-            <div>
-                <h5>Career Progression</h5>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="career-progression" id="career-progression-software-development" value="software-development">
-                    <label class="form-check-label" for="career-progression-software-development">
-                        Software Development
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="career-progression" id="career-progression-public-speaking" value="public-speaking">
-                    <label class="form-check-label" for="career-progression-public-speaking">
-                        Public Speaking
-                    </label>
-                </div>
-            </div>
-
-            <div><button type="button" class="btn btn-primary search-mentors">Search</button></div>
+            <button type="button" class="btn btn-primary btn-lg search-mentors">Search</button>
         </form>
+        
+        <hr>
 
-        <div class="container text-center">
+        <div class="container text-center cards-container">
             <div class="cards row">
                 <div class="col-sm-4 mx-auto">
                     <div class="card col" style="width: 18rem;" data-role="chief-people-officer" data-location="dublin" data-skills="hiring-manager" data-progress="software-development">
@@ -94,7 +103,7 @@
                             <li class="list-group-item"><i class="fa-solid fa-up-long"></i>  <span class="fw-bolder text-decoration-underline">Career Progression</span> - Software Development</li>
                         </ul>
                         <div class="card-body">
-                            <button type="button" class="btn btn-success btn-call">Schedule a call</button>
+                            <button type="button" class="btn btn-success btn-call"><i class="fa-solid fa-calendar-days"></i> Schedule a call</button>
                         </div>
                     </div>
                 </div>
@@ -112,7 +121,7 @@
                             <li class="list-group-item"><i class="fa-solid fa-up-long"></i>  <span class="fw-bolder text-decoration-underline">Career Progression</span> - Software Development</li>
                         </ul>
                         <div class="card-body">
-                            <button type="button" class="btn btn-success btn-call">Schedule a call</button>
+                            <button type="button" class="btn btn-success btn-call"><i class="fa-solid fa-calendar-days"></i> Schedule a call</button>
                         </div>
                     </div>
                 </div>
@@ -130,7 +139,7 @@
                             <li class="list-group-item"><i class="fa-solid fa-up-long"></i>  <span class="fw-bolder text-decoration-underline">Career Progression</span> - Public Speaking</li>
                         </ul>
                         <div class="card-body">
-                            <button type="button" class="btn btn-success btn-call">Schedule a call</button>
+                            <button type="button" class="btn btn-success btn-call"><i class="fa-solid fa-calendar-days"></i> Schedule a call</button>
                         </div>
                     </div>
                 </div>
