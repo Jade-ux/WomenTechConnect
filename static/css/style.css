@@ -150,18 +150,20 @@ footer {
   justify-content: center;
 }
 
-/* bt primary color */
+/* bt primary/success color */
 .btn-primary {
   background-color: #355c7d;
   border-color: #355c7d;
 }
 
-.btn-primary:hover {
-  background-color: #C06C84;
-  border-color: #C06C84;
+.btn-success {
+  background-color: #f8b195;
+  border-color: #f8b195;
+  color: #355c7d;
+  letter-spacing: 2px;
 }
 
-.btn-primary:focus {
+.btn-primary:hover, .btn-primary:focus, .btn-success:hover, .btn-success:focus{
   background-color: #C06C84;
   border-color: #C06C84;
 }
@@ -358,4 +360,32 @@ footer {
   .footer-container {
     flex-direction: column;
   }
+}
+
+/* search mentorship program */
+
+.search-container {
+  border-bottom: #355c7d 1px solid;
+  padding: 20px;
+}
+
+.search-mentors {
+  margin-top: 10px;
+}
+
+.cards-container {
+  margin: 20px 0;
+}
+
+.cards-container .card-body, .cards-container li  {
+  background-color: #355c7d;
+  color: white;
+}
+
+.cards-container li {
+  border-color: white;
+}
+
+.cards-container .card-title {
+  letter-spacing: 2px;
 }

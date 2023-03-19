@@ -1,9 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 
-        <form>
-            <div>
-                <h5>Role</h5>
+        <div class="text-center">
+            <h1>Mentorship Program</h1>
+            <h3>Find your mentor</h3>
+        </div>
+
+        <div class="search-container">
+            <form>
+                <h4>Are you looking for a ...</h4>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" value="software-developer" name="flexRadioDefault"
                         id="flexRadioDefault1">
@@ -18,12 +23,11 @@
                         Hiring Manager
                     </label>
                 </div>
-            </div>
+                <button type="button" class="btn btn-primary search-mentors">Search</button>
+            </form>
+        </div>
 
-            <div><button type="button" class="btn btn-primary search-mentors">Search</button></div>
-        </form>
-
-        <div class="container text-center">
+        <div class="container text-center cards-container">
             <div class="cards row">
                 <div class="col-sm-4 mx-auto">
                     <div class="card col" style="width: 18rem;" data-exp="5" data-role="software-developer">
@@ -41,7 +45,7 @@
                                 PM (GMT)</li>
                         </ul>
                         <div class="card-body">
-                            <button type="button" class="btn btn-success btn-call">Schedule a call</button>
+                            <button type="button" class="btn btn-success btn-call"><i class="fa-solid fa-calendar-days"></i> Schedule a call</button>
                         </div>
                     </div>
                 </div>
@@ -61,7 +65,7 @@
                                 PM (GMT)</li>
                         </ul>
                         <div class="card-body">
-                            <button type="button" class="btn btn-success btn-call">Schedule a call</button>
+                            <button type="button" class="btn btn-success btn-call"><i class="fa-solid fa-calendar-days"></i> Schedule a call</button>
                         </div>
                     </div>
                 </div>
@@ -81,7 +85,7 @@
                                 PM (GMT)</li>
                         </ul>
                         <div class="card-body">
-                            <button type="button" class="btn btn-success btn-call">Schedule a call</button>
+                            <button type="button" class="btn btn-success btn-call"><i class="fa-solid fa-calendar-days"></i> Schedule a call</button>
                         </div>
                     </div>
                 </div>
