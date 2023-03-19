@@ -383,7 +383,7 @@ footer {
   color: white;
 }
 
-.btn-primary{
+.signin-form button{
   display: flex;
   justify-content: center;
   margin-top: 10px;
