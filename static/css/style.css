@@ -311,7 +311,6 @@ footer {
   padding: 20px;
   text-align: center;
   box-shadow: 10px 10px 20px black;
-  text-shadow: 1px 2px 2px black;
   z-index: 3;
 }
 
@@ -330,95 +329,7 @@ footer {
   font-size: 1.5rem;
 }
 
-.brackets {
-  max-width:10px;
-  height: 10px;
-
-}
-
-.brackets {
-  font-size: 10rem;
-  position: absolute;
-  font-weight: 900;
-  color: #f67280;
-  z-index: 1
-}
-
-.x {
-  animation: x 7s linear infinite alternate;
-}
-
-.y {
-  animation: y 7s linear infinite alternate;
-}
-
-@keyframes x {
-  100% {
-    transform: translateX(calc(60vw - 100px));
-  }
-}
-
-@keyframes y {
-  100% {
-    transform: translateY(calc(60vh - 100px));
-  }
-}
-
-.asterix {
-  font-size: 10rem;
-  position: relative;
-  font-weight: 900;
-  color: #c06c84;
-  z-index: 2
-}
-
-.a {
-  animation: a 10s linear infinite alternate;
-}
-
-.b {
-  animation: b 7s linear infinite alternate;
-}
-
-@keyframes a {
-  100% {
-    transform: translateX(calc(60vw - 100px));
-  }
-}
-
-@keyframes b {
-  100% {
-    transform: translateX(calc(60vw - 100px));
-  }
-}
-
-.percentage {
-  font-size: 10rem;
-  position: relative;
-  font-weight: 900;
-  color: #f8b195;
-  z-index: -1
-}
-
-.c {
-  animation: c 15s linear infinite alternate;
-}
-
-.d {
-  animation: d 5s linear infinite alternate;
-}
-
-@keyframes c {
-  100% {
-    transform: translateX(calc(60vw - 100px));
-  }
-}
-
-@keyframes d {
-  100% {
-    transform: translateY(calc(50px));
-  }
-}
+/* thank you page styling */
 
 .thanks {
   width: 50%;
@@ -439,7 +350,6 @@ footer {
   padding: 20px;
   text-align: center;
   box-shadow: 10px 10px 20px black;
-  text-shadow: 1px 2px 2px black;
 
 }
 
