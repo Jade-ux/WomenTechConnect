@@ -7,17 +7,24 @@
         <p>to get access to our Mentorship Programme and keep up to date with industry news and events</p>
       </div>
       <div class="col-12 form-col">
-        <form class="row g-3 form-signup" method="get" action="thankyou.html">
+        <form class="row g-3 form-signup" method="get" action="/thankyou">
           <div class="col-12">
             <label for="fullName" class="form-label">Full Name</label>
             <input type="text" class="form-control" id="fullName" name="fullName" required>
           </div>
           <div class="col-12">
-            <label for="currentStatus" class="form-label">Current Status</label>
-            <select id="currentStatus" name="currentStatus" class="form-select" required>
-              <option selected>Choose...</option>
-              <option>...</option>
+            <label for="areasOfInterest" class="form-label">Areas of Interest</label>
+            <select id="areasOfInterest" name="areasOfInterest" class="form-select" required>
+              <option value="" selected>Choose...</option>
+              <option value="full-stack">Full-stack Development</option>
+              <option value="front-end">Front-end Development</option>
+              <option value="back-end">Back-end Development</option>
+              <option value="dev-ops">DevOps Development</option>
             </select>
+          </div>
+          <div class="col-12">
+            <label for="currentRole" class="form-label">Current Role</label>
+            <input type="text" class="form-control" id="currentRole" name="currentRole" required>
           </div>
           <div class="col-12">
             <label for="Location" class="form-label">Location</label>
