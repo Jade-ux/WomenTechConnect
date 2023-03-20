@@ -24,8 +24,7 @@
   * [Media](#media)
   * [Acknowledgements](#acknowledgements)
 ​
-​
-## User Stories
+​## User Stories
 
 - As a user looking for a mentor, I want to browse mentors and filter by skills, areas of interest and availability
 - As a user, I want to sign up to receive news and updates from the site
@@ -61,8 +60,6 @@ Each mentor card will contain a section dedicated to content that relates to the
 Each mentor card contains custom data attributes that relate to the value of the checkbox input elements. When the user selects the criteria that they would like to search for, they then confirm their selection by pressing the 'Search' button. All of the cards are then hidden by default. Next, JavaScript and jQuery are used to compare the checkbox value with the data attributes, if they match then the related mentor card is shown.
 
 These selections use the OR operator rather than AND, this means that if a user selects 'Dublin' and 'Software Development', then they will be shown mentors that either are from Dublin or those that are not from Dublin but are Software Developers. This was used to allow users to get a wide range of mentors rather than limiting the number that can be shown.
-
-
 
 ## Technology:
 
@@ -128,8 +125,8 @@ pexels.com was used to source copyright free images for the website gallery and 
 ### Wireframes:
 ​
 ![homepage](docs/readme/homepage.png)
-​![signup](docsreadme/signup.png)
-​​![signup](docs/readme/events.png)
+​![signup](docs/readme/signup.png)
+​​![events](docs/readme/events.png)
 ​
 ## Deployment
 - Login to Github
@@ -154,25 +151,27 @@ pexels.com was used to source copyright free images for the website gallery and 
 
 ​![css](docs/readme/CSS-validation.png )
 
-​* JS:
+* JS:
 
 No warnings when using [JSHint](https://jshint.com/):
 
 ![Image](https://user-images.githubusercontent.com/110825112/226314806-1f2eb659-6f90-4b0c-8939-00bea2b068f5.png)
 
-​* Python:
+* Python:
 
 ​![python](docs/readme/python-validation.png)
 
+* Lighthouse
+
+​![desktop](docs/readme/lighthouse.png)
+
+
 ## Credits
-​
-### Code
-<< any and all code that isn't yours...must go here >>
 ​
 ### Content
 
 * Inspiration Page:
-  * [ChatGPT](https://chat.openai.com/) was used to create the content.
+  * [ChatGPT](https://chat.openai.com/) was used to create the content for the inspiration page.
 
 ### Media
  
