@@ -368,10 +368,11 @@ footer {
   box-shadow: 10px 10px 20px black;
 }
 
-.name-text {
+.thanks-text {
   color: #C06C84;
   font-weight: 400;
 }
+
 
 /* Login page */
 .card-header{

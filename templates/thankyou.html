@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
-<div>
+<div mt-3>
   <div class="thanks">
-    <h1>Thank you for signing up to our network <p class="name-text">{{ full_name }}!</p></h1>
+    <h1>Thank you for signing up to our network <p class="thanks-text">{{ full_name }}!</p></h1>
     <p>You've signed up with the following details:</p>
-    <p>Areas of interest: {{ email.interests }}</p>
-    <p>Current role: {{ email.current_role }}</p>
-    <p>Your location: {{ email.location }}</p>
+    <p>Areas of interest:</p> <p class="thanks-text">{{ interests }}</p>
+    <p>Current role: </p><p class="thanks-text">{{ current_role }}</p>
+    <p>Your location: </p><p class="thanks-text">{{ location }}</p>
     <p>We'll be in touch with more information regarding the mentoring programme and upcoming events and industry news.</p>
     <br>
     <p>It's great to have you on board.</p>

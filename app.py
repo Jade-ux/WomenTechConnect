@@ -66,13 +66,19 @@ def signup():
 @app.route("/thankyou/<email>", methods=["GET", "POST"])
 def thankyou(email):
     if session["user"]:
-        # get the session user's username from the database
+        # get the session user's details from the database
         email = mongo.db.users.find_one(
             {"email": session["user"]})["email"]
         full_name = mongo.db.users.find_one(
             {"email": session["user"]})["full_name"]
+        interests = mongo.db.users.find_one(
+            {"email": session["user"]})["interests"]
+        current_role = mongo.db.users.find_one(
+            {"email": session["user"]})["current_role"]
+        location = mongo.db.users.find_one(
+            {"email": session["user"]})["location"]
         return render_template(
-            "thankyou.html", email=email, full_name=full_name)
+            "thankyou.html", email=email, full_name=full_name, interests=interests, current_role=current_role, location=location)
 
 
 @app.route("/inspiration")
