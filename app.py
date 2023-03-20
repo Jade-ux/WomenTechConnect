@@ -27,9 +27,10 @@ def get_home():
 
 
 @app.route("/search")
-@login_required
 def search():
-    return render_template("search.html")
+    if 'user' in session:
+        return render_template("search.html")
+
 
 
 @app.route("/signup", methods=["GET", "POST"])
@@ -119,9 +120,9 @@ def inspiration():
     return render_template("inspiration.html")
 
 @app.route("/events")
-@login_required
 def events():
-    return render_template("events.html")
+    if 'user' in session:
+        return render_template("events.html")
 
 
 @app.errorhandler(404)
@@ -138,9 +139,9 @@ def team():
     return render_template("team.html")
 
 @app.route("/contact")
-@login_required
 def contact():
-    return render_template("contact.html")
+    if 'user' in session:
+        return render_template("contact.html")
     
 
 @app.route("/logout")
