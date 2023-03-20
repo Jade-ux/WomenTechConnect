@@ -38,7 +38,8 @@ def signup():
         # checks if the user exists in the database
         existing_user = mongo.db.users.find_one(
             {"email": request.form.get("email").lower()})
-        existing_user_name = mongo.db.users.find_one({"username": request.form.get("username").lower()})
+        existing_user_name = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
 
         if existing_user:
             flash("Email already exists, please sign in")
