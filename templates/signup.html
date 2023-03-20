@@ -7,7 +7,11 @@
         <p>to get access to our Mentorship Programme and keep up to date with industry news and events</p>
       </div>
       <div class="col-12 form-col">
-        <form class="row g-3 form-signup" method="get" action="/thankyou">
+        <form method="POST" class="row g-3 form-signup" method="get" action="{{ url_for('signup') }}">
+          <div class="col-12">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+          </div>
           <div class="col-12">
             <label for="fullName" class="form-label">Full Name</label>
             <input type="text" class="form-control" id="fullName" name="fullName" required>
@@ -27,8 +31,8 @@
             <input type="text" class="form-control" id="currentRole" name="currentRole" required>
           </div>
           <div class="col-12">
-            <label for="Location" class="form-label">Location</label>
-            <input type="text" class="form-control" id="Location" name="location" required>
+            <label for="location" class="form-label">Location</label>
+            <input type="text" class="form-control" id="location" name="location" required>
           </div>
           <div class="col-12">
             <label for="email" class="form-label">Email</label>

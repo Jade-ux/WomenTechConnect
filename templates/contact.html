@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container signin-page">
+  <div class="row justify-content-center mt-5">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header ">Contact a mentor</div>
+        <div class="card-body">
+          <form class="signin-form" action="{{ url_for('search') }}">
+            <div class="form-group">
+              <label for="name">Your name:</label>
+              <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="col-12">
+                <label for="areasOfInterest" class="form-label">Mentor</label>
+                <select id="areasOfInterest" name="areasOfInterest" class="form-select" required>
+                  <option value="" selected>Choose...</option>
+                  <option value="full-stack">Sarah</option>
+                  <option value="front-end">Margaret</option>
+                  <option value="back-end">Leah</option>
+                  <option value="dev-ops">Hungwi</option>
+                </select>
+              </div>
+            <div class="form-group">
+              <label for="message">Your message</label>
+              <input type="message" class="form-control" id="message" name="message">
+            </div>
+            <button type="submit" class="btn btn-primary signin-btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  {% endblock %}
+
+  {% block scripts %}
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  {% endblock %}
