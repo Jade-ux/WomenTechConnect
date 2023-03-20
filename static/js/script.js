@@ -50,6 +50,10 @@ function showSelectedMentor() {
 
 // Only run jQuery when the document is loaded and ready for jQuery to be run
 $(document).ready(function () {
+
+  var myCarousel = document.querySelector('#myCarousel')
+  var carousel = new bootstrap.Carousel(myCarousel)
+
   // Check when the search button is clicked
   $(".search-mentors").click(function () {
 
