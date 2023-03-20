@@ -33,6 +33,9 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('events') }}">Events</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('team') }}">Team</a>
+          </li>
           {% if session.user %}
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('logout') }}">Sign Out</a>
