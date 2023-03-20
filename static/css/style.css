@@ -142,10 +142,6 @@ footer {
     text-align: center;
 }
 
-.events-list {
-    padding: 20px;
-    
-}
 .events-by-date {
     
     padding: 20px;
@@ -154,7 +150,19 @@ footer {
 .events-list {
     margin-bottom: 10px;
     display: block;
-    clear: both;    
+    clear: both; 
+    padding: 20px;
+    background-color: #355c7d;
+    color: white;
+    border-radius: 10px;   
+}
+
+.events-list a {
+  color: white;
+}
+
+.events-list a:hover {
+  color: #f8b195;
 }
 
 .image-events {
@@ -167,17 +175,14 @@ footer {
     margin: 0;
 }
 
-
 .events-date {
-    color: #c06c84;
+    color: #f8b195;
     font-weight: bolder;
-    
 }
 
-.featured-envents {
+.featured-events {
     padding: 20px;
-    font-size: 30px;
-    
+    font-size: 1.2rem; 
 }
 
 .events-list-featured {
@@ -185,7 +190,18 @@ footer {
     display: block;
     clear: both;
     text-align: center;
+}
 
+.four-featured {
+  background-color: #355c7d;
+  color: white;
+  border-radius: 10px; 
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+.four-featured .col {
+  justify-content: center;
 }
 
 .body-container {
@@ -373,6 +389,12 @@ footer {
 @media screen and (max-width: 576px) {
   .footer-container, .search-container {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .image-events img {
+    width: 90vw;
   }
 }
 
