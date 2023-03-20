@@ -4,7 +4,7 @@
 function hideAll() {
   $('.card').each(function () {
     this.parentElement.style.display = "none";
-  })
+  });
 }
 
 /**
@@ -18,11 +18,10 @@ function checkAttributeMatch(cardAttribute, checkboxValue) {
 
   if (checkboxValue == cardAttribute) {
     match = true;
-  };
+  }
 
   return match;
 }
-
 
 /**
  * If the selected checkbox value matches the attributes of a mentor, then show that mentor card.
@@ -49,7 +48,6 @@ function showSelectedMentor() {
   });
 }
 
-
 // Only run jQuery when the document is loaded and ready for jQuery to be run
 $(document).ready(function () {
   // Check when the search button is clicked
@@ -60,5 +58,5 @@ $(document).ready(function () {
 
     // Shows selected mentors
     showSelectedMentor();
-  })
+  });
 });
