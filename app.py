@@ -149,10 +149,18 @@ def team():
     return render_template("team.html")
 
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
-    if 'user' in session:
-        return render_template("contact.html")
+    if session["user"]:
+        if request.method == "GET":
+            full_name = mongo.db.users.find_one(
+                {"username": session["user"]})["full_name"]
+            return render_template("contact.html", full_name=full_name)
+        elif request.method == "POST":
+            name = request.form.get("name")
+            mentor = request.form.get("mentor").capitalize()
+            message = request.form.get("message")
+            return render_template("booking.html", name=name, mentor=mentor, message=message)         
     
 
 @app.route("/logout")

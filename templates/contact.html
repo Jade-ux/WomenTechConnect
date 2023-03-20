@@ -6,14 +6,14 @@
       <div class="card">
         <div class="card-header ">Contact a mentor</div>
         <div class="card-body">
-          <form class="signin-form" action="{{ url_for('search') }}">
+          <form class="signin-form" action="{{ url_for('contact') }}" method="post">
             <div class="form-group">
               <label for="name">Your name:</label>
-              <input type="text" class="form-control" id="name" name="name">
+              <input type="text" class="form-control" id="name" name="name" value="{{ full_name }}">
             </div>
             <div class="col-12">
-                <label for="areasOfInterest" class="form-label">Mentor</label>
-                <select id="areasOfInterest" name="areasOfInterest" class="form-select" required>
+                <label for="mentor" class="form-label">Mentor</label>
+                <select id="mentor" name="mentor" class="form-select" required>
                   <option value="" selected>Choose...</option>
                   <option value="fiona">Fiona</option>
                   <option value="rachel">Rachel</option>
@@ -28,7 +28,7 @@
               </div>
             <div class="form-group">
               <label for="message">Your message</label>
-              <input type="message" class="form-control" id="message" name="message">
+              <textarea type="message" class="form-control" id="message" name="message"></textarea>
             </div>
             <button type="submit" class="btn btn-primary signin-btn">Send</button>
           </form>
