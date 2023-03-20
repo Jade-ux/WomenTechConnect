@@ -122,9 +122,9 @@ def events():
     return render_template("events.html")
 
 
-@app.route("/404")
-def pagenotfound():
-    return render_template("404.html")
+@app.errorhandler(404)
+def not_found(e):
+  return render_template("404.html")
 
 
 @app.route("/team")
