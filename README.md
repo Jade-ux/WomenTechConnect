@@ -129,7 +129,11 @@ pexels.com was used to source copyright free images for the website gallery and 
 * CSS:
 - ​​![css](docs/readme/CSS-validation.png )
 
-​
+​* JS:
+No warnings when using [JSHint](https://jshint.com/):
+
+![Image](https://user-images.githubusercontent.com/110825112/226314806-1f2eb659-6f90-4b0c-8939-00bea2b068f5.png)
+
 ## Credits
 ​
 ### Code
