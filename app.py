@@ -56,7 +56,6 @@ def signup():
 
         # put the new user into 'session' cookie
         session["user"] = request.form.get("email").lower()
-        flash("Thank you for signing up!")
         # once logged, redirect user to dashboard,
         # using session cookie
         return redirect(url_for("thankyou", email=session["user"]))
@@ -96,21 +95,18 @@ def signin():
                     existing_user["password"], request.form.get("password")):
                 session["user"] = request.form.get("username").lower()
                 flash("Welcome, {}".format(request.form.get("username")))
-                print("logged in")
                 return redirect(url_for(
                         "get_home", username=session["user"]))
             else:
                 # invalid password match 
                 flash(
                     "We don't reconise those details, please try again")
-                print("invalid password")
                 return redirect(url_for("signin"))
 
         else:
             # if username doesn't exist
             flash(
                 "We don't reconise those details, please try again")
-            print("invalid user")
             return redirect(url_for("signin"))
 
     # if the method is not POST

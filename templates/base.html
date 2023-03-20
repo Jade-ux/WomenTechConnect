@@ -33,14 +33,34 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('events') }}">Events</a>
           </li>
+          {% if session.user %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('logout') }}">Sign Out</a>
+          </li>
+          {% else %}
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('signup') }}">Sign Up</a>
           </li>
+          {% endif %}
         </ul>
       </div>
     </div>
   </nav>
   <div class="container body-container">
+    <section>
+      <!--flashed messages-->
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      {% for message in messages %}
+      <div class="row">
+          <h2 class="flashed-messsages">
+              {{ message }}
+          </h2>
+      </div>
+      {% endfor %}
+      {% endif %}
+      {% endwith %}
+  </section>
     {% block content %}
     {% endblock %}
   </div>
