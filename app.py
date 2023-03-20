@@ -27,6 +27,7 @@ def get_home():
 
 
 @app.route("/search")
+@login_required
 def search():
     return render_template("search.html")
 
@@ -118,6 +119,7 @@ def inspiration():
     return render_template("inspiration.html")
 
 @app.route("/events")
+@login_required
 def events():
     return render_template("events.html")
 
@@ -126,12 +128,17 @@ def events():
 def not_found(e):
   return render_template("404.html")
 
+@app.errorhandler(500)
+def not_found(e):
+  return render_template("500.html")
+
 
 @app.route("/team")
 def team():
     return render_template("team.html")
 
 @app.route("/contact")
+@login_required
 def contact():
     return render_template("contact.html")
     

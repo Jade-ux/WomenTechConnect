@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <div class="message">
+    <h1>Oh hi there!</h1>
+    <p>Looks like you don't have permission to access this page.</p>
+    <br>
+    <a href="{{ url_for('signup') }}">Click here to sign up to our website</a>
+  </div>
+
+
+ {% endblock %}
