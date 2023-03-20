@@ -366,7 +366,11 @@ footer {
   padding: 20px;
   text-align: center;
   box-shadow: 10px 10px 20px black;
+}
 
+.name-text {
+  color: #C06C84;
+  font-weight: 400;
 }
 
 /* Login page */

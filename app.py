@@ -1,7 +1,11 @@
 import os
 from flask_login import (LoginManager, current_user, login_required)
-from flask import (Flask, render_template)
+from flask import (
+    Flask, flash, render_template, redirect,
+    request, session, url_for)
 from flask_pymongo import PyMongo
+from werkzeug.security import generate_password_hash, check_password_hash
+from werkzeug.utils import secure_filename
 import pymongo
 if os.path.exists("env.py"):
     import env
@@ -29,12 +33,46 @@ def search():
 
 @app.route("/signup", methods=["GET", "POST"])
 def signup():
+    if request.method == "POST":
+        # checks if the user exists in the database
+        existing_user = mongo.db.users.find_one({"email": request.form.get("email").lower()})
+
+        if existing_user:
+            flash("Email already exists, please sign in")
+            return redirect(url_for("signin"))
+
+        register = {
+            "email": request.form.get("email").lower(),
+            "password": generate_password_hash(request.form.get("password")),
+            "full_name": request.form.get("fullName"),
+            "current_role": request.form.get("currentRole"),
+            "interests": request.form.get("areasOfInterest"),
+            "location": request.form.get("location"),
+            "mentee": request.form.get("mentee"),
+            "mentor": request.form.get("mentor"),
+        }
+        mongo.db.users.insert_one(register)
+
+        # put the new user into 'session' cookie
+        session["user"] = request.form.get("email").lower()
+        flash("Thank you for signing up!")
+        # once logged, redirect user to dashboard,
+        # using session cookie
+        return redirect(url_for("thankyou", email=session["user"]))
+
     return render_template("signup.html")
 
 
-@app.route("/thankyou")
-def thankyou():
-    return render_template("thankyou.html")
+@app.route("/thankyou/<email>", methods=["GET", "POST"])
+def thankyou(email):
+    if session["user"]:
+        # get the session user's username from the database
+        email = mongo.db.users.find_one(
+            {"email": session["user"]})["email"]
+        full_name = mongo.db.users.find_one(
+            {"email": session["user"]})["full_name"]
+        return render_template(
+            "thankyou.html", email=email, full_name=full_name)
 
 
 @app.route("/inspiration")
