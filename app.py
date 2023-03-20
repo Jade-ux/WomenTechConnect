@@ -42,6 +42,7 @@ def signup():
             return redirect(url_for("signin"))
 
         register = {
+            "username": request.form.get("username").lower(),
             "email": request.form.get("email").lower(),
             "password": generate_password_hash(request.form.get("password")),
             "full_name": request.form.get("fullName"),
@@ -81,6 +82,41 @@ def thankyou(email):
             "thankyou.html", email=email, full_name=full_name, interests=interests, current_role=current_role, location=location)
 
 
+# signin function
+@app.route("/signin", methods=["GET", "POST"])
+def signin():
+    if request.method == "POST":
+        # check if email exists and if it does, store it in a variable
+        existing_user = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
+
+        if existing_user:
+            # ensure hashed password matches the user input
+            if check_password_hash(
+                    existing_user["password"], request.form.get("password")):
+                session["user"] = request.form.get("username").lower()
+                flash("Welcome, {}".format(request.form.get("username")))
+                print("logged in")
+                return redirect(url_for(
+                        "get_home", username=session["user"]))
+            else:
+                # invalid password match 
+                flash(
+                    "We don't reconise those details, please try again")
+                print("invalid password")
+                return redirect(url_for("signin"))
+
+        else:
+            # if username doesn't exist
+            flash(
+                "We don't reconise those details, please try again")
+            print("invalid user")
+            return redirect(url_for("signin"))
+
+    # if the method is not POST
+    return render_template("signin.html")
+
+
 @app.route("/inspiration")
 def inspiration():
     return render_template("inspiration.html")
@@ -93,11 +129,6 @@ def events():
 @app.route("/404")
 def pagenotfound():
     return render_template("404.html")
-
-
-@app.route("/signin")
-def signin():
-    return render_template("signin.html")
 
 
 @app.route("/team")

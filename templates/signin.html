@@ -6,7 +6,7 @@
       <div class="card">
         <div class="card-header ">Login</div>
         <div class="card-body">
-          <form class="signin-form">
+          <form class="signin-form" method="POST" action="{{ url_for('signin') }}">
             <div class="form-group">
               <label for="username">Username:</label>
               <input type="text" class="form-control" id="username" name="username">
