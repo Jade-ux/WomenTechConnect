@@ -202,19 +202,7 @@ footer {
 
 .body-container {
   flex-grow: 1;
-  padding-top: 20px;
-}
-
-/* Sign Up form */
-
-.form-signup {
-  width: 100%;
-  max-width: 330px;
-}
-
-.form-col {
-  display: flex;
-  justify-content: center;
+  padding: 20px 0;
 }
 
 /* bt primary/success color */
