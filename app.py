@@ -20,6 +20,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
+
 @app.route("/")
 def get_home():
     users = mongo.db.users.find()
@@ -37,11 +38,18 @@ def search():
 def signup():
     if request.method == "POST":
         # checks if the user exists in the database
-        existing_user = mongo.db.users.find_one({"email": request.form.get("email").lower()})
+        existing_user = mongo.db.users.find_one(
+            {"email": request.form.get("email").lower()})
+        existing_user_name = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
 
         if existing_user:
             flash("Email already exists, please sign in")
             return redirect(url_for("signin"))
+
+        if existing_user_name:
+            flash("That username is taken, please try another")
+            return redirect(url_for("signup"))
 
         register = {
             "username": request.form.get("username").lower(),
@@ -80,7 +88,8 @@ def thankyou(email):
         location = mongo.db.users.find_one(
             {"email": session["user"]})["location"]
         return render_template(
-            "thankyou.html", email=email, full_name=full_name, interests=interests, current_role=current_role, location=location)
+            "thankyou.html", email=email, full_name=full_name,
+            interests=interests, current_role=current_role, location=location)
 
 
 # signin function
@@ -100,7 +109,7 @@ def signin():
                 return redirect(url_for(
                         "get_home", username=session["user"]))
             else:
-                # invalid password match 
+                # invalid password match
                 flash(
                     "We don't reconise those details, please try again")
                 return redirect(url_for("signin"))
@@ -119,6 +128,7 @@ def signin():
 def inspiration():
     return render_template("inspiration.html")
 
+
 @app.route("/events")
 def events():
     if 'user' in session:
@@ -127,7 +137,7 @@ def events():
 
 @app.errorhandler(404)
 def not_found(e):
-  return render_template("404.html")
+    return render_template("404.html")
 
 @app.errorhandler(500)
 def not_found(e):
@@ -137,6 +147,7 @@ def not_found(e):
 @app.route("/team")
 def team():
     return render_template("team.html")
+
 
 @app.route("/contact")
 def contact():
@@ -155,4 +166,3 @@ if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=False)
-

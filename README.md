@@ -3,11 +3,12 @@
 ## Team Name: TechWomenConnect
 ​
 [Link to Deployed Project](https://womentechconnect.herokuapp.com/)
+
+![Image](https://user-images.githubusercontent.com/62659009/226258689-dd8c7735-db99-40bb-85ad-a7dfd85ffb1c.png)
 ​
 ## Contents
 ​
-* [User Experience (UX)](#user-experience)
-  * [User Stories](#user-stories)
+* [User Stories (UX)](#user-stories)
 * [Technology](#technology)
 * [Design](#design)
   * [Color Scheme](#color-scheme)
@@ -22,31 +23,37 @@
   * [Media](#media)
   * [Acknowledgements](#acknowledgements)
 ​
-## User Experience
-* 
-
 ​
-### User stories
-* 
+## User Stories
+
+- As a user looking for a mentor, I want to browse mentors and filter by skills, areas of interest and availability
+- As a user, I want to sign up to receive news and updates from the site
+- As a user I want to be able to browse upcoming events and read details such as location, topic and how to attend
+- As a user I want to be able to read stories about inspirational women in the 'Inspiration' section of the site
+- As a user looking for a mentor, I want to be able to sign up as a mentee, using a form and entering my:
+    - name
+    - current status
+    - location
+    - my email address (will be hidden from users)
+    - password
+- As a user looking for a mentor, I want to be able to contact mentors via a contact form on the site
+- As a user looking to mentor other women, I want to be able to enter my details on a form, including:
+    - name
+    - current status
+    - location
+    - my email address (will be hidden from users)
+    - password
 
 
-<< user stories here - don't be stingy on this 😅 you can even put down your expectations as a developer in this forum >>
-​
 ## Technology:
 
 ### Tech Stack
 ​
-[![My Tech Stack](https://github-readme-tech-stack.vercel.app/api/cards?title=Support%20Change&lineCount=1&line1=HTML5,HTML5,a41d4e;CSS3,CSS3,da4650;Bootstrap,Bootstrap,a85ac8;JavaScript,JavaScript,17acf8;)](https://github-readme-tech-stack.vercel.app/api/cards?title=Support%20Change&lineCount=1&line1=HTML5,HTML5,a41d4e;CSS3,CSS3,da4650;Bootstrap,Bootstrap,a85ac8;JavaScript,JavaScript,17acf8;)
+Technologies Used: HTML, CSS, JavaScript, jQuery, Bootstrap, Python, Flask, Heroku, GitHub, Git, Bash, Gitpod
 
-### Languages:
+GitHub URL: https://github.com/Jade-ux/WomenTechConnect 
 
-*HTML: HTML was used to create the basic architecture of our website.
-*CSS: We used CSS to style our HTML elements, making them more eye catching to improve the user experience.
-*JavaScript:We chose JavaScript to generate an eyecatching and well presented website, providing a high quality user experience.
-*Bootstrap: Boostrap enables building of webpages quickly, which is key in short turnaround project.
-​
-* << tools >>
-  * << list the tool & reason for using it >>
+Deployed URL:  https://womentechconnect.herokuapp.com/
 ​
 ## Initial MVP idea:
 ​
@@ -54,14 +61,14 @@ Following the initial team meeting, project ideas were shared and the agreed ide
 ​
 ### Actual idea & content:
 ​
-The goal of our mentorship program is to accelerate the personal and professional development of our mentees for the benefit of all. We are growing a network of women in the technology industry which matches experienced leaders with individuals entering the community. You can search through our extensive list of mentors who are looking to work with women and share their experiences to ensure their mentees meet their potential. Filter through the categories to find the right mentor for you and schedule a call. By sharing our experiences we can help our peers to accelerate their career growth and help them to navigate the rapidly growing industry. In our experience mentoring increases career progression, promotion rates, and employee satisfaction for both the mentors and mentees. Mentors get the opportunity to develop their leadership and communication skills and gain new perspectives along with the knowledge that they are building the next generation of female developers.
+A web application developed as a part of Code Institute's March Hackathon based on the theme of women in tech. It features services that allow for effective communication for women in navigating the tech industry. The project achieves this by presenting mentorship opportunities through mentor profile cards where users can schedule meetings with the personalities that they feel they associate with the most. Users can find a list of upcoming events that encourage networking among women in tech. And the project also features an inspiration feature where users are presented with profiles of successful women figures.
 ​
 - File structure:
     
     - index.html
     - search.html
     - inspiration.html
-    - signup.html
+    - team.html
     - signin.html
     - signup.html
     - thankyou.html
@@ -78,7 +85,7 @@ The goal of our mentorship program is to accelerate the personal and professiona
 ## Design
 ​
 ### Color Scheme:
-![color palette](static/images/readme/colour-palette.png)
+![color palette](docs/readme/colour-palette.png)
 
 - #F67280
 - #F8B195
@@ -100,9 +107,9 @@ pexels.com was used to source copyright free images for the website gallery and 
 
 ### Wireframes:
 ​
-![homepage](static/images/readme/homepage.png)
-​![signup](static/images/readme/signup.png)
-​​![signup](static/images/readme/events.png)
+![homepage](docs/readme/homepage.png)
+​![signup](docsreadme/signup.png)
+​​![signup](docs/readme/events.png)
 ​
 ## Deployment
 - Login to Github
@@ -117,19 +124,39 @@ pexels.com was used to source copyright free images for the website gallery and 
 ​
 ## Testing
 
+## Validator testing
 
+* CSS:
+- ​​![css](docs/readme/CSS-validation.png )
 
-​
+​* JS:
+No warnings when using [JSHint](https://jshint.com/):
+
+![Image](https://user-images.githubusercontent.com/110825112/226314806-1f2eb659-6f90-4b0c-8939-00bea2b068f5.png)
+
 ## Credits
 ​
 ### Code
 << any and all code that isn't yours...must go here >>
 ​
 ### Content
-<< any content, such as facts/references/text that isn't yours...must go here >>
-​
+
+* Inspiration Page:
+  * [ChatGPT](https://chat.openai.com/) was used to create the content.
+
 ### Media
-<< you may have already done this above in the Imagery section, but just in case, please attribute Media acquisition here >>
+ 
+* Inspiration Page:
+  * [Ada Lovelace](https://images.newscientist.com/wp-content/uploads/2021/05/11162637/ada-lovelace-htkrgb_web.jpg)
+  * [Marie Curie](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Marie_Curie_c._1920s.jpg/1200px-Marie_Curie_c._1920s.jpg)
+  * [Florence Nightingale](https://upload.wikimedia.org/wikipedia/commons/a/ab/Florence_Nightingale_%28H_Hering_NPG_x82368%29.jpg)
+  * [Katherine Johnson](https://www.nasa.gov/sites/default/files/thumbnails/image/26646856911_ca242812ee_o_1.jpg)
+  * [Dorothy Vaughan](https://upload.wikimedia.org/wikipedia/commons/9/98/Dorothy_Vaughan_2.jpg)
+  * [Williamina Fleming](https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Williamina_Paton_Stevens_Fleming_circa_1890s.jpg/1200px-Williamina_Paton_Stevens_Fleming_circa_1890s.jpg)
+  * [Gladys West](https://i.guim.co.uk/img/media/91830bf543b0ab70a1cf28f83d9d97d9c42cdd0b/0_0_2228_2785/master/2228.jpg?width=700&quality=85&auto=format&fit=max&s=83232b0e6ba8f529d9d7e5a133f55169)
+  * [Stephanie Kwolek](https://www.timeforkids.com/wp-content/uploads/2020/08/AG_stephanie.jpg)
+  * [Katharina Paulus](https://upload.wikimedia.org/wikipedia/commons/2/28/K%C3%A4the_Paulus_ca._1890_Fotomontage_3256644_1450825047-e1450825180454.jpg)
 ​
+
 ### Acknowledgements
-<< personal thanks and praise 🙌 >>
+<< Thanks to the CI Hackteam for putting together this dream team. It has been a really positive experience and we are super proud of what we have produced together.  🙌 >>
