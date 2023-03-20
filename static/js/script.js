@@ -14,7 +14,6 @@ function hideAll() {
  * @returns {boolean} if the cardAttribute and checkboxValue are equal
  */
 function checkAttributeMatch(cardAttribute, checkboxValue) {
-  console.log(cardAttribute)
   let match = false;
 
   if (checkboxValue == cardAttribute) {
@@ -39,8 +38,7 @@ function showSelectedMentor() {
     // Iterates through all of the mentor cards
     for (let i = 0; i < mentors.length; i++) {
       let mentor = mentors[i];
-      
-      console.log(`data-{$this.name}`)
+
       // Check if the mentor card attribute matches the current checkbox value
       if (checkAttributeMatch(mentor.getAttribute(`data-${this.name}`), this.value)) {
 
@@ -51,12 +49,16 @@ function showSelectedMentor() {
   });
 }
 
-// Check when the search button is clicked
-$(".search-mentors").click(function () {
 
-  // First hide all mentor cards
-  hideAll();
+// Only run jQuery when the document is loaded and ready for jQuery to be run
+$(document).ready(function () {
+  // Check when the search button is clicked
+  $(".search-mentors").click(function () {
 
-  // Shows selected mentors
-  showSelectedMentor();
-})
+    // First hide all mentor cards
+    hideAll();
+
+    // Shows selected mentors
+    showSelectedMentor();
+  })
+});
