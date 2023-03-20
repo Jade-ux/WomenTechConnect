@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div mt-3>
+  <div class="thanks">
+    <h1>Well done <p class="thanks-text">{{ name }}!</p></h1>
+    <p>Your message will be delivered to the mentor:</p>
+    <p>Mentor:</p> <p class="thanks-text">{{ mentor }}</p>
+    <p>Message: </p><p class="thanks-text">{{ message }}</p>
+    <p>Thank you for using our services. It's great to have you on board.</p>
+  </div>
+</div>
+
+{% endblock %}
