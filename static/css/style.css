@@ -205,18 +205,6 @@ footer {
   padding: 20px 0;
 }
 
-/* Sign Up form */
-
-.form-signup {
-  width: 100%;
-  max-width: 330px;
-}
-
-.form-col {
-  display: flex;
-  justify-content: center;
-}
-
 /* bt primary/success color */
 .btn-primary {
   background-color: #355c7d;
