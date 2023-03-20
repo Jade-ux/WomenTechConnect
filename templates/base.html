@@ -24,14 +24,16 @@
       </button>
       <div class="collapse navbar-collapse navbar-page-list" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          {% if session.user %}
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('search') }}">Mentorship Programme</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('inspiration') }}">Inspiration</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="{{ url_for('events') }}">Events</a>
+          </li>
+          {% endif %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('inspiration') }}">Inspiration</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('team') }}">Team</a>
