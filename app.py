@@ -134,7 +134,9 @@ def team():
 
 @app.route("/logout")
 def logout():
-    return render_template("logout.html")
+    session.pop("user")
+    flash("You've logged out successfully")
+    return redirect(url_for("get_home"))
 
 
 if __name__ == "__main__":
