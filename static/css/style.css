@@ -202,7 +202,7 @@ footer {
 
 .body-container {
   flex-grow: 1;
-  padding-top: 20px;
+  padding: 20px 0;
 }
 
 /* Sign Up form */
