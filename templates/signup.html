@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 
+    <div class="text-center">
+      <h1>Sign Up</h1>
+      <h3>Get access to our Mentorship Programme and keep up to date with industry news and events</h3>
+    </div>
+
     <div class="row p-3">
-      <div class="col-12 text-center">
-        <h1>Sign Up</h1>
-        <p>to get access to our Mentorship Programme and keep up to date with industry news and events</p>
-      </div>
       <div class="col-12 form-col">
         <form method="POST" class="row g-3 form-signup" method="get" action="{{ url_for('signup') }}">
           <div class="col-12">
