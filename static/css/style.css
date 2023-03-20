@@ -44,7 +44,7 @@ body{
 .nav-item {
   justify-content: space-between;
   font-size: 20px;
-  margin-left: 6rem;
+  margin-left: 2rem;
   display: flex;
 }
 
