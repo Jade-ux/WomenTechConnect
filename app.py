@@ -29,7 +29,9 @@ def get_home():
 
 @app.route("/search")
 def search():
-    return render_template("search.html")
+    if 'user' in session:
+        return render_template("search.html")
+
 
 
 @app.route("/signup", methods=["GET", "POST"])
@@ -129,12 +131,17 @@ def inspiration():
 
 @app.route("/events")
 def events():
-    return render_template("events.html")
+    if 'user' in session:
+        return render_template("events.html")
 
 
 @app.errorhandler(404)
 def not_found(e):
     return render_template("404.html")
+
+@app.errorhandler(500)
+def not_found(e):
+  return render_template("500.html")
 
 
 @app.route("/team")
@@ -144,8 +151,9 @@ def team():
 
 @app.route("/contact")
 def contact():
-    return render_template("contact.html")
-
+    if 'user' in session:
+        return render_template("contact.html")
+    
 
 @app.route("/logout")
 def logout():
