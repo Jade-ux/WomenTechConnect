@@ -9,6 +9,7 @@
 ## Contents
 ​
 * [User Stories (UX)](#user-stories)
+* [Features](#features)
 * [Technology](#technology)
 * [Design](#design)
   * [Color Scheme](#color-scheme)
@@ -44,6 +45,24 @@
     - my email address (will be hidden from users)
     - password
 
+## Features
+
+### Mentor Search
+In the 'Mentorship Program' section of the page, there is the ability to search for a mentor based on selected criteria. Using radio buttons, users can select certain categories, this will then limit the mentors shown to ones that match the criteria.
+
+The available categories are 'Role', 'Location', 'Skills' and 'Career Progression:
+
+![Image](https://user-images.githubusercontent.com/110825112/226203673-f2bdb875-fa14-46d0-b822-549c873607d7.png)
+
+Each mentor card will contain a section dedicated to content that relates to the search criteria:
+
+![Image](https://user-images.githubusercontent.com/110825112/226203911-bf19eb92-65f7-4b26-97c8-58dd506faac1.png)
+
+Each mentor card contains custom data attributes that relate to the value of the checkbox input elements. When the user selects the criteria that they would like to search for, they then confirm their selection by pressing the 'Search' button. All of the cards are then hidden by default. Next, JavaScript and jQuery are used to compare the checkbox value with the data attributes, if they match then the related mentor card is shown.
+
+These selections use the OR operator rather than AND, this means that if a user selects 'Dublin' and 'Software Development', then they will be shown mentors that either are from Dublin or those that are not from Dublin but are Software Developers. This was used to allow users to get a wide range of mentors rather than limiting the number that can be shown.
+
+
 
 ## Technology:
 
@@ -73,6 +92,7 @@ A web application developed as a part of Code Institute's March Hackathon based 
     - signup.html
     - thankyou.html
     - logout.html
+    - 500.html
     - 404.html (error handling)
     - assets folder >
         - images > 
@@ -124,15 +144,25 @@ pexels.com was used to source copyright free images for the website gallery and 
 ​
 ## Testing
 
-## Validator testing
+### Validator testing
+
+* HTML:
+
+​![html](docs/readme/html-index.png )
 
 * CSS:
-- ​​![css](docs/readme/CSS-validation.png )
+
+​![css](docs/readme/CSS-validation.png )
 
 ​* JS:
+
 No warnings when using [JSHint](https://jshint.com/):
 
 ![Image](https://user-images.githubusercontent.com/110825112/226314806-1f2eb659-6f90-4b0c-8939-00bea2b068f5.png)
+
+​* Python:
+
+​![python](docs/readme/python-validation.png)
 
 ## Credits
 ​
@@ -159,4 +189,4 @@ No warnings when using [JSHint](https://jshint.com/):
 ​
 
 ### Acknowledgements
-<< Thanks to the CI Hackteam for putting together this dream team. It has been a really positive experience and we are super proud of what we have produced together.  🙌 >>
+<< Thanks to the CI Hackteam for putting together this dream team. It has been a really positive experience and we are super proud of what we have produced together in such a short space of time.  🙌 >>
